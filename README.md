@@ -6,7 +6,11 @@
 
 
 ## Description
-Baetreon is nearly a clone of the Patreon front page, as much as may be done in a single brief day.  Attempts to mimic layout, animations, colors, but especially for the practice of creating flex boxes and creating working media queries were all the purpose and intent for this project.
+Baetreon is nearly a clone of the Patreon front page, as much as may be done in a single brief day.  Attempts to mimic layout, animations, colors, but especially for the practice of creating flex boxes and creating working media queries were all the purpose and intent for this project.  Below are comparisons of the two sites at different widths:
+
+![Large Screen](/img/baetreon-compare-1600w.png)
+![Medium Screen](/img/baetreon-compare-830w.png)
+![Small Screen](/img/baetreon-compare-662w.png)
 
 ## Setup/Installation Requirements
 - To view, visit https://swampcamel.github.io/baetreon
