@@ -1,0 +1,7 @@
+@mixin compatibleAnim($duration, $name, $ease, $repitition) {
+  -webkit-animation: $duration $name $ease $repitition;
+  -moz-animation: $duration $name $ease $repitition;
+  -ms-animation: $duration $name $ease $repitition;
+  -o-animation: $duration $name $ease $repitition;
+  animation: $duration $name $ease $repitition;
+}

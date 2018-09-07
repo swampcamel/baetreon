@@ -1,0 +1,48 @@
+#blink-cursor {
+  @include compatibleAnim(1s, blinking, step-end, infinite);
+}
+
+@keyframes "blinking" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #f96955;
+  }
+}
+
+@-moz-keyframes blinking {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #f96955;
+  }
+}
+
+@-webkit-keyframes "blinking" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #f96955;
+  }
+}
+
+@-ms-keyframes "blinking" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #f96955;
+  }
+}
+
+@-o-keyframes "blinking" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #f96955;
+  }
+}

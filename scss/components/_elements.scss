@@ -1,0 +1,40 @@
+// hero section
+.video-wrapper {
+  height: 583px;
+  display: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%);
+  text-align: center;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero video {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+// just below hero
+.memb-wrapper {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
