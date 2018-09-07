@@ -15,10 +15,14 @@
   z-index: 1;
   transform: translate(-50%);
 
-  width: 30%;
+  width: 750px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  h1 {
+    font-size: 46px;
+  }
 }
 
 .hero video {
@@ -38,7 +42,7 @@
 .memb-wrapper {
   @include auto-center;
   width: 50%;
-  height: 230px;
+  height: 98%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,13 +79,14 @@
 //tools section
 .tools-wrapper {
   @include auto-center;
-  width: 40%;
+  width: 725px;
   text-align: center;
 }
 
 .tools-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 290px;
 }
 
@@ -98,7 +103,7 @@
  .tools-links {
    font-weight: bolder;
    text-align: left;
-   height: 100%;
+   height: 290px;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -116,6 +121,73 @@
 
  //members info area
 
- .members-slider h2 {
-   text-align: center;
+#members-title {
+  text-align: center;
+  font-weight: 900;
+}
+
+.members-content {
+  @include auto-center;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 704px;
+  box-shadow: rgba(5, 45, 73, 0.07) 0px 2px 0px 0px;
+  display: flex;
+  justify-content: space-between;
  }
+
+.members-image {
+ position: relative;
+ width: 300px;
+ img {
+   display: block;
+   width: 100%;
+   height: auto;
+  }
+}
+
+.members-text {
+  width: 50%;
+}
+
+@media screen and (max-width: 1300px) {
+  .memb-wrapper {
+    width: 90%;
+    h1{
+    font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .benefits-1 {
+    height: 1px;
+    .benefits-1-wrapper {
+      display: none;
+    }
+  }
+  .tools-wrapper {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .hero-overlay {
+    width: 96%;
+    h1 {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .memb-wrapper h1 {
+    font-size: 18px;
+  }
+  .tools-links {
+    height: 220px;
+    p {
+      font-size: 10px;
+    }
+  }
+}

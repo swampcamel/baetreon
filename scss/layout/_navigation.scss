@@ -71,7 +71,7 @@
   }
 }
 
-.menu {
+.menu, .login {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -82,5 +82,21 @@
     font-weight: bold;
     padding-right: 25px;
     padding-left: 25px;
+  }
+}
+
+#hamburger {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .menu, .search {
+    display: none;
+  }
+  #hamburger {
+    display: flex;
   }
 }
