@@ -3,6 +3,124 @@ html, body {
   padding: 0;
 }
 
+html, body, h1, h2, h3, h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 1px;
+}
+
+#blink-cursor {
+  -webkit-animation: 1s blinking step-end infinite;
+  -moz-animation: 1s blinking step-end infinite;
+  -ms-animation: 1s blinking step-end infinite;
+  -o-animation: 1s blinking step-end infinite;
+  animation: 1s blinking step-end infinite;
+}
+
+@keyframes "blinking" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #f96955;
+  }
+}
+@-moz-keyframes blinking {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #f96955;
+  }
+}
+@-webkit-keyframes "blinking" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #f96955;
+  }
+}
+@-ms-keyframes "blinking" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #f96955;
+  }
+}
+@-o-keyframes "blinking" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #f96955;
+  }
+}
+.video-wrapper {
+  width: 100%;
+  height: 583px;
+  display: relative;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.hero-link {
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.memb-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-content {
+  margin-top: 45px;
+}
+
+.hero {
+  width: 100%;
+  height: 583px;
+}
+
+.membership {
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  text-align: center;
+}
+
+.benefits-1 {
+  background-color: #052d49;
+  height: 600px;
+}
+
 .nav-wrapper {
   width: 100%;
   height: 45px;
@@ -13,12 +131,12 @@ html, body {
 }
 
 .navbar {
+  margin-left: auto;
+  margin-right: auto;
   width: 98%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
 }
 
@@ -89,36 +207,6 @@ html, body {
   font-weight: bold;
   padding-right: 25px;
   padding-left: 25px;
-}
-
-.page-content {
-  margin-top: 45px;
-}
-
-.hero {
-  height: 400px;
-}
-
-.video-wrapper {
-  height: 400px;
-  display: relative;
-}
-
-.hero-overlay {
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-}
-
-.hero video {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-  display: inline-block;
-  vertical-align: baseline;
 }
 
 /*# sourceMappingURL=output.css.map */

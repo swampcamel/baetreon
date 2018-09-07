@@ -3,17 +3,16 @@
   height: 45px;
   position: fixed;
   top: 0;
-  border-bottom: 2px solid #e1e1e1;
+  border-bottom: 2px solid $border-color;
   background-color: #fff;
 }
 
 .navbar {
+  @include auto-center;
   width: 98%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
 }
 
@@ -40,8 +39,8 @@
 .search {
   height: 100%;
   padding-left: 25px;
-  border-left: 2px solid #e1e1e1;
-  border-right: 2px solid #e1e1e1;
+  border-left: 2px solid $border-color;
+  border-right: 2px solid $border-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,7 +61,7 @@
     -webkit-transition-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
     transition-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
     &::placeholder {
-      color: darken(#e6e6e6, 20%);
+      color: $light-font;
       font-weight: normal;
     }
   }

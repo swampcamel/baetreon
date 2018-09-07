@@ -1,12 +1,12 @@
-@import 'abstracts/variables';
 @import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-@import 'base/reset.scss';
-@import 'base/typography.scss';
+@import 'base/reset';
+@import 'base/typography';
 
-@import 'components/animations.scss';
-@import 'components/elements.scss';
+@import 'components/animations';
+@import 'components/elements';
 
-@import 'layout/footer.scss';
-@import 'layout/main-grid.scss';
-@import 'layout/navigation.scss';
+@import 'layout/footer';
+@import 'layout/main-grid';
+@import 'layout/navigation';

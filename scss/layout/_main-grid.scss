@@ -3,18 +3,16 @@
 }
 
 .hero {
-  height: 583px;
-  width: 100%;
+  @include hero-size;
 }
 
 .membership {
+  @include auto-center;
   width: 98%;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 
 .benefits-1 {
-  background-color: #052d49;
+  background-color: $accent-1;
   height: 600px;
 }

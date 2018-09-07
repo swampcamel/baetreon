@@ -1,19 +1,20 @@
 // hero section
 .video-wrapper {
-  height: 583px;
+  @include hero-size;
   display: relative;
-  width: 100%;
   overflow: hidden;
 }
 
 .hero-overlay {
   color: #fff;
+  text-align: center;
+
   position: absolute;
   top: 20%;
   left: 50%;
   z-index: 1;
   transform: translate(-50%);
-  text-align: center;
+
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -21,18 +22,22 @@
 }
 
 .hero video {
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  width: 100%;
   display: inline-block;
   vertical-align: baseline;
 }
 
+.hero-link {
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
 // just below hero
 .memb-wrapper {
+  @include auto-center;
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
   height: 230px;
   display: flex;
   flex-direction: column;
