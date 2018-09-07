@@ -8,6 +8,10 @@ html, body, h1, h2, h3, h4 {
   letter-spacing: 1px;
 }
 
+.benefits-1 {
+  color: white;
+}
+
 #blink-cursor {
   -webkit-animation: 1s blinking step-end infinite;
   -moz-animation: 1s blinking step-end infinite;
@@ -100,6 +104,76 @@ html, body, h1, h2, h3, h4 {
   justify-content: center;
 }
 
+.benefits-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-1-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.benefit-icons, .benefit-title, .benefit-message {
+  width: 750px;
+  display: flex;
+}
+.benefit-icons img, .benefit-title img, .benefit-message img {
+  align-self: flex-start;
+}
+
+.benefit-image-wrap {
+  width: 250px;
+}
+
+.tools-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  text-align: center;
+}
+
+.tools-content {
+  display: flex;
+  justify-content: space-between;
+  height: 290px;
+}
+
+.tools-img {
+  position: relative;
+  width: 400px;
+}
+.tools-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tools-links {
+  font-weight: bolder;
+  text-align: left;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.tools-links p {
+  -webkit-transition: transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.tools-links p:hover {
+  color: #358eff;
+  transform: translate(5%);
+}
+
+.members-slider h2 {
+  text-align: center;
+}
+
 .page-content {
   margin-top: 45px;
 }
@@ -118,7 +192,19 @@ html, body, h1, h2, h3, h4 {
 
 .benefits-1 {
   background-color: #052d49;
-  height: 600px;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.tools {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.members-slider {
+  background-color: #f3f4f5;
+  padding-top: 42px;
+  padding-bottom: 42px;
 }
 
 .nav-wrapper {

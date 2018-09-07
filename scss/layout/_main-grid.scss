@@ -14,5 +14,15 @@
 
 .benefits-1 {
   background-color: $accent-1;
-  height: 600px;
+  @include pad-module;
+}
+
+
+.tools {
+  @include pad-module;
+}
+
+.members-slider {
+  background-color: $accent-3;
+  @include pad-module;
 }

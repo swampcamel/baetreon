@@ -43,3 +43,79 @@
   flex-direction: column;
   justify-content: center;
 }
+
+//first benefits section
+
+.benefits-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-1-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.benefit-icons, .benefit-title, .benefit-message {
+  width: $benefit-width;
+  display: flex;
+
+  img {
+    align-self: flex-start;
+  }
+}
+
+.benefit-image-wrap {
+  width: 250px
+}
+
+//tools section
+.tools-wrapper {
+  @include auto-center;
+  width: 40%;
+  text-align: center;
+}
+
+.tools-content {
+  display: flex;
+  justify-content: space-between;
+  height: 290px;
+}
+
+.tools-img{
+  position: relative;
+  width: 400px;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+   }
+ }
+
+ .tools-links {
+   font-weight: bolder;
+   text-align: left;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   p {
+     -webkit-transition: transform 0.4s;
+     transition: transform 0.4s;
+     -webkit-transition-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+     transition-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+   }
+   p:hover {
+     color: rgb(53, 142, 255);
+     transform: translate(5%);
+   }
+ }
+
+ //members info area
+
+ .members-slider h2 {
+   text-align: center;
+ }
