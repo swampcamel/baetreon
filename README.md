@@ -10,7 +10,7 @@ Baetreon is nearly a clone of the Patreon front page, as much as may be done in 
 
 ![Large Screen](baetreon-compare-1600w.PNG)
 ![Medium Screen](baetreon-compare-830w.PNG)
-![Small Screen](baetreon/img/baetreon-compare-662w.PNG)
+![Small Screen](baetreon-compare-662w.PNG)
 
 ## Setup/Installation Requirements
 - To view, visit https://swampcamel.github.io/baetreon
