@@ -245,6 +245,11 @@ html, body, h1, h2, h3, h4 {
   .hero-overlay h1 {
     font-size: 28px;
   }
+
+  .members-image {
+    width: 50%;
+    padding-right: 15px;
+  }
 }
 @media screen and (max-width: 470px) {
   .memb-wrapper h1 {
