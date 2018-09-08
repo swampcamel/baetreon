@@ -119,16 +119,21 @@ html, body, h1, h2, h3, h4 {
 
 .benefits-1-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.benefit-icons, .benefit-title, .benefit-message {
-  width: 750px;
+.benefit-col1, .benefit-col2, .benefit-col3 {
+  width: 240px;
   display: flex;
+  flex-direction: column;
 }
-.benefit-icons img, .benefit-title img, .benefit-message img {
+.benefit-col1 img, .benefit-col2 img, .benefit-col3 img {
   align-self: flex-start;
+}
+
+#idea {
+  height: 67px;
 }
 
 .benefit-image-wrap {
@@ -217,11 +222,8 @@ html, body, h1, h2, h3, h4 {
   }
 }
 @media screen and (max-width: 800px) {
-  .benefits-1 {
-    height: 1px;
-  }
-  .benefits-1 .benefits-1-wrapper {
-    display: none;
+  .benefits-1-wrapper {
+    flex-direction: column;
   }
 
   .tools-wrapper {
