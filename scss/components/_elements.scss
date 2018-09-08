@@ -63,7 +63,7 @@
 
 }
 
-.benefit-col1, .benefit-col2, .benefit-col3 {
+.benefits-cols {
   width: $benefit-width;
   display: flex;
   flex-direction: column;
@@ -165,7 +165,13 @@
 
 @media screen and (max-width: 800px) {
   .benefits-1-wrapper {
+    @include auto-center;
       flex-direction: column;
+      width: 98%;
+      .benefits-cols {
+        width: 90%;
+        @include auto-center;
+      }
   }
   .tools-wrapper {
     width: 90%;

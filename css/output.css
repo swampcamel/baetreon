@@ -123,12 +123,12 @@ html, body, h1, h2, h3, h4 {
   justify-content: space-between;
 }
 
-.benefit-col1, .benefit-col2, .benefit-col3 {
+.benefits-cols {
   width: 240px;
   display: flex;
   flex-direction: column;
 }
-.benefit-col1 img, .benefit-col2 img, .benefit-col3 img {
+.benefits-cols img {
   align-self: flex-start;
 }
 
@@ -223,7 +223,15 @@ html, body, h1, h2, h3, h4 {
 }
 @media screen and (max-width: 800px) {
   .benefits-1-wrapper {
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
+    width: 98%;
+  }
+  .benefits-1-wrapper .benefits-cols {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .tools-wrapper {
